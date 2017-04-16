@@ -1,0 +1,10 @@
+/* --- サイドナビゲーション --- */
+#sidenav {
+	float: left;
+	width: 20%; /* サイドバーの幅 */
+}
+
+#main {
+	float: left;
+	width: 80%;
+}

@@ -8,3 +8,12 @@ $(function() {
 	$('#footer').load('footer.html');
 });
 
+$(function() {
+	// $.ajaxSetup({cache:false}); //なくても良いがキャッシュを読み込まないように?
+	$('#sidenav').load('sidenav.html');
+});
+
+$(function() {
+	// $.ajaxSetup({cache:false}); //なくても良いがキャッシュを読み込まないように?
+	$('#contact').load('contact.html');
+});
