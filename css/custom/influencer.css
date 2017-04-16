@@ -1,10 +1,58 @@
 /* --- サイドナビゲーション --- */
 #sidenav {
 	float: left;
-	width: 20%; /* サイドバーの幅 */
+	width: 30%; /* サイドバーの幅 */
+	padding-left: 70px;
+	padding-right: 70px;
 }
-
+/* --- メインコンテンツ --- */
 #main {
 	float: left;
-	width: 80%;
+	width: 70%;
+	padding-right: 200px;
+}
+
+/* --- リスト --- */
+#sidenav ul{
+  padding: 0 0.5em;
+  position: relative;
+}
+#sidenav li {
+  line-height: 2;
+  font-size: 15px;
+  padding: 0.5em 0 0.5em 1.5em;
+  list-style-type: none!important;
+}
+#sidenav li:before {
+  font-family: FontAwesome;
+  content: "\f00c";/*アイコン種類*/
+  position: absolute;
+  left : 0.5em; /*左端からのアイコンまで*/
+  color: #668ad8; /*アイコン色*/
+}
+#sidenav li:last-of-type{
+  border-bottom: none;/*最後の線だけ消す*/
+}
+
+/* --- リスト メインコンテンツ --- */
+#main ul {
+  padding: 0 0.5em;
+  position: relative;
+}
+#main li {
+  line-height: 3;
+  font-size: 18px;
+  padding: 0.5em 0 0.5em 1.5em;
+  border-bottom: 0.2px solid lightgray;
+  list-style-type: none!important;
+}
+ul.my_content li:before {
+  font-family: FontAwesome;
+  content: "\f00c";/*アイコン種類*/
+  position: absolute;
+  left : 0.5em; /*左端からのアイコンまで*/
+  color: #668ad8; /*アイコン色*/
+}
+ul.my_content li:last-of-type{
+  border-bottom: none;/*最後の線だけ消す*/
 }
